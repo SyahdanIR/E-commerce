@@ -6,7 +6,7 @@ export default function Cart() {
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 mt-10">
         {products.map((product) =>(
-            <div key={product.id} className="bg-white rounded-2xl shadow-sm overflow-hidden p-3 m-6">
+            <div key={product.id} className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm overflow-hidden p-3 m-6">
               <div className="flex flex-row gap-8">
                 <div className="overflow-hidden rounded-xl bg-gray-100 w-1/3">
                   <img
@@ -20,7 +20,7 @@ export default function Cart() {
                   <p className="text-1xl font-semibold text-blue-600 mt-4">
                     Rp{product.price}
                   </p>
-                  <Button className="mt-8 w-full md:w-fit">
+                  <Button className="mt-8 w-fit">
                     <Link to="#">Checkout</Link>
                   </Button>
                 </div>
